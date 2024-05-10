@@ -1,0 +1,7 @@
+.\src\THETA.v
+.\src\SHA3_tb.v
+.\src\THETA_column.v
+.\src\RHO.v
+.\src\PI.v
+.\src\CHI_row.v
+.\src\CHI.v

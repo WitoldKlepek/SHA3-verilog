@@ -1,0 +1,406 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/PI.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA_column.v
+# Error: VCP5103 THETA_column.v : (10, 8): Undeclared identifier: N.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA_column.v
+# Unit top modules: THETA_column.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Error: VCP2000 CHI_row.v : (5, 18): Syntax error. Unexpected token: -:[O_MINUS_IDX].
+# Error: VCP2000 CHI_row.v : (10, 12): Syntax error. Unexpected token: always_comb[_ALWAYS_COMB]. This is a SystemVerilog keyword since IEEE Std 1800-2005 and cannot be used as an identifier. Use -v2k5, -v2k or -v95 argument for compilation.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Error: VCP2000 CHI_row.v : (5, 18): Syntax error. Unexpected token: -:[O_MINUS_IDX].
+# Error: VCP2000 CHI_row.v : (10, 12): Syntax error. Unexpected token: always_comb[_ALWAYS_COMB]. This is a SystemVerilog keyword since IEEE Std 1800-2005 and cannot be used as an identifier. Use -v2k5, -v2k or -v95 argument for compilation.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Error: VCP2000 CHI_row.v : (12, 41): Syntax error. Unexpected token: ;.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Unit top modules: CHI_row.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Unit top modules: CHI_row.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (17, 33): Syntax error. Unexpected token: ;.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (38, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (18, 6): Syntax error. Unexpected token: ;.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Unit top modules: CHI.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB CHI.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/SHA3_tb.v
+# Unit top modules: SHA3_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB CHI.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB CHI.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+SHA3_TB SHA3_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.2 [s]
+# SLP: 0 primitives and 971 (100.00%) other processes in SLP
+# SLP: 3229 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 841 kB (elbread=454 elab2=251 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location D:\My_Designs\SHA3\SHA3_FPGA\src\wave.asdb
+#  14:22, œroda, 8 maja 2024
+#  Simulation has been initialized
+run
+# KERNEL: TIME = 0 
+# KERNEL:  in = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_theta = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, 
+# KERNEL:  out_rho = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_pi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: TIME = 5 
+# KERNEL:  in = 53587b9901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+# KERNEL:  out_theta = 53587b990100000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000800000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000, 
+# KERNEL:  out_rho = 53587b9901000000a4b0f63203000000000000000000000000000008000000000000003085b59719000000000000000097190000002085b5000000000000000000000000000040000000600a6b2f33000000000000000000004861ed6506000000000000000000000000000100000000990100000053587b00000000000000002f33000000400a6b0040000000000000000010000000000000a6b0f63203000000000000000000004861ed650600000000000000000000000000000000008000008029acbdcc0000 
+# KERNEL:  out_pi = 53587b990100000097190000002085b500000000000000000000100000000000008029acbdcc000000000000000000004861ed650600000000000000000000000000000000004000990100000053587b0000000000000000004861ed65060000004000000000000000000000000080000000003085b597190000000000000000a4b0f632030000000000000000000000000000010000000000a6b0f63203000000000000000000002f33000000400a6b000000000000000000000008000000000000600a6b2f3300 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+SHA3_TB SHA3_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 1.2 [s]
+# SLP: 0 primitives and 1612 (100.00%) other processes in SLP
+# SLP: 4192 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 931 kB (elbread=467 elab2=328 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location D:\My_Designs\SHA3\SHA3_FPGA\src\wave.asdb
+#  14:22, œroda, 8 maja 2024
+#  Simulation has been initialized
+run
+# KERNEL: TIME = 0 
+# KERNEL:  in = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_theta = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, 
+# KERNEL:  out_rho = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_pi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: TIME = 5 
+# KERNEL:  in = 53587b9901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+# KERNEL:  out_theta = 53587b990100000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000800000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000, 
+# KERNEL:  out_rho = 53587b9901000000a4b0f63203000000000000000000000000000008000000000000003085b59719000000000000000097190000002085b5000000000000000000000000000040000000600a6b2f33000000000000000000004861ed6506000000000000000000000000000100000000990100000053587b00000000000000002f33000000400a6b0040000000000000000010000000000000a6b0f63203000000000000000000004861ed650600000000000000000000000000000000008000008029acbdcc0000 
+# KERNEL:  out_pi = 53587b990100000097190000002085b500000000000000000000100000000000008029acbdcc000000000000000000004861ed650600000000000000000000000000000000004000990100000053587b0000000000000000004861ed65060000004000000000000000000000000080000000003085b597190000000000000000a4b0f632030000000000000000000000000000010000000000a6b0f63203000000000000000000002f33000000400a6b000000000000000000000008000000000000600a6b2f3300 
+# KERNEL:  out_chi = 570a319b05000040835d00000068a490010000000000000000001400000000000080658d9cdd000000000000000000000a6be4ec0600000000000000000000000000000000004002b301000000cb1a390000000000000000001829e4601700000050000000000000000000000000a00000000074a490835d00000000000000008c1462360b0000000000000000000000000000090000000000ae1462360b0000000000000000004067b3000000c0486101000000000000000000000a000000000000685823673600
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2020 CHI.v : (21, 4): begin...end pair(s) mismatch detected. 1 <begin> tokens are missing.
+# Error: VCP2020 CHI.v : (21, 4): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2020 CHI.v : (21, 4): generate...endgenerate pair(s) mismatch detected. 1 <endgenerate> tokens are missing.
+# Error: VCP2000 CHI.v : (21, 4): Syntax error. Unexpected token: end[_END].
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (17, 12): Syntax error. Unexpected token: [.
+# Error: VCP2000 CHI.v : (19, 9): Syntax error. Unexpected token: ).
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI_row.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (17, 12): Syntax error. Unexpected token: [.
+# Error: VCP2000 CHI.v : (19, 9): Syntax error. Unexpected token: ).
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (17, 15): Syntax error. Unexpected token: (.
+# Error: VCP2000 CHI.v : (19, 9): Syntax error. Unexpected token: ).
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (16, 20): Syntax error. Unexpected token: =.
+# Error: VCP2000 CHI.v : (17, 32): Syntax error. Unexpected token: ,.
+# Error: VCP2020 CHI.v : (25, 8): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
+# Error: VCP2020 CHI.v : (25, 8): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2020 CHI.v : (25, 8): generate...endgenerate pair(s) mismatch detected. 1 <endgenerate> tokens are missing.
+# Error: VCP2000 CHI.v : (25, 8): Syntax error. Unexpected token: end[_END].
+# Warning: VCP2515 CHI.v : (16, 44): Undefined module: j was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 6 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Error: VCP2000 CHI.v : (16, 20): Syntax error. Unexpected token: =.
+# Error: VCP2020 CHI.v : (25, 8): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
+# Error: VCP2020 CHI.v : (25, 8): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2020 CHI.v : (25, 8): generate...endgenerate pair(s) mismatch detected. 1 <endgenerate> tokens are missing.
+# Error: VCP2000 CHI.v : (25, 8): Syntax error. Unexpected token: end[_END].
+# Compile failure 5 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/CHI.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+SHA3_TB SHA3_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.4 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 0 primitives and 1612 (100.00%) other processes in SLP
+# SLP: 4832 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1048 kB (elbread=467 elab2=445 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location D:\My_Designs\SHA3\SHA3_FPGA\src\wave.asdb
+#  14:39, œroda, 8 maja 2024
+#  Simulation has been initialized
+run
+# KERNEL: TIME = 0 
+# KERNEL:  in = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_theta = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, 
+# KERNEL:  out_rho = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_pi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: TIME = 5 
+# KERNEL:  in = 53587b9901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+# KERNEL:  out_theta = 53587b990100000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000800000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000, 
+# KERNEL:  out_rho = 53587b9901000000a4b0f63203000000000000000000000000000008000000000000003085b59719000000000000000097190000002085b5000000000000000000000000000040000000600a6b2f33000000000000000000004861ed6506000000000000000000000000000100000000990100000053587b00000000000000002f33000000400a6b0040000000000000000010000000000000a6b0f63203000000000000000000004861ed650600000000000000000000000000000000008000008029acbdcc0000 
+# KERNEL:  out_pi = 53587b990100000097190000002085b500000000000000000000100000000000008029acbdcc000000000000000000004861ed650600000000000000000000000000000000004000990100000053587b0000000000000000004861ed65060000004000000000000000000000000080000000003085b597190000000000000000a4b0f632030000000000000000000000000000010000000000a6b0f63203000000000000000000002f33000000400a6b000000000000000000000008000000000000600a6b2f3300 
+# KERNEL:  out_chi = 53587b990100000097191000002085b5008029acbdcc00005358421100000000848129acbdec85b500000000000000004861ed6506004000990100000053187b0000000000004000d160ed650653587b0000000000000000004861ed650680000040003085b517190000000000008000004861dde0b397190000000000000000a4b0f6330300000000a6b0f6320300000000000100000000a41646c43103000000000000000000002f33000800400a6b000060026b2f330000000008000000002f33600a6b6f396b
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+SHA3_TB SHA3_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.4 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 0 primitives and 1612 (100.00%) other processes in SLP
+# SLP: 4832 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1048 kB (elbread=467 elab2=445 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location D:\My_Designs\SHA3\SHA3_FPGA\src\wave.asdb
+#  14:47, œroda, 8 maja 2024
+#  Simulation has been initialized
+run
+# KERNEL: TIME = 0 
+# KERNEL:  in = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_theta = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, 
+# KERNEL:  out_rho = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_pi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: TIME = 5 
+# KERNEL:  in = 53587b9901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+# KERNEL:  out_theta = 53587b990100000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000800000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000, 
+# KERNEL:  out_rho = 53587b9901000000a4b0f63203000000000000000000000000000008000000000000003085b59719000000000000000097190000002085b5000000000000000000000000000040000000600a6b2f33000000000000000000004861ed6506000000000000000000000000000100000000990100000053587b00000000000000002f33000000400a6b0040000000000000000010000000000000a6b0f63203000000000000000000004861ed650600000000000000000000000000000000008000008029acbdcc0000 
+# KERNEL:  out_pi = 53587b99010000002f33000000400a6b000000000000000000000000000080000000600a6b2f3300000000000000000097190000002085b500000000000000000000100000000000990100000053587b0000000000000000004861ed65060000000000000000000000000000000040000000003085b597190000000000000000a4b0f6320300000000400000000000000000000100000000008029acbdcc000000000000000000004861ed65060000000000000000000000000000080000000000a6b0f632030000 
+# KERNEL:  out_chi = 53587b99010000002f33000000408a6b0000600a6b2f330053581b91000080002c23600a6b6f396b000000000000000097191000002085b5990100000053587b00001000000000000e1800000073ddce0000000000000000004861ed650640000000003085b597190000000000004000004861dde0b397190040000000000000a4b0f6330300000000c029acbdcc00000000000100000000a430df9ebecc000000000000000000004861ed6d0600000000a6b0f632030000000000080000000048c75d9334030000
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/PI.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/SHA3_tb.v
+# Unit top modules: SHA3_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+SHA3_TB SHA3_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.4 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 0 primitives and 1612 (100.00%) other processes in SLP
+# SLP: 4832 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1048 kB (elbread=467 elab2=445 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location D:\My_Designs\SHA3\SHA3_FPGA\src\wave.asdb
+#  14:55, œroda, 8 maja 2024
+#  Simulation has been initialized
+run
+# KERNEL: TIME = 0 
+# KERNEL:  in = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_theta = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, 
+# KERNEL:  out_rho = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_pi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: TIME = 5 
+# KERNEL:  in = 53587b9901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+# KERNEL:  out_theta = 53587b990100000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000800000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000, 
+# KERNEL:  out_rho = 53587b9901000000a4b0f63203000000000000000000000000000008000000000000003085b59719000000000000000097190000002085b5000000000000000000000000000040000000600a6b2f33000000000000000000004861ed6506000000000000000000000000000100000000990100000053587b00000000000000002f33000000400a6b0040000000000000000010000000000000a6b0f63203000000000000000000004861ed650600000000000000000000000000000000008000008029acbdcc0000 
+# KERNEL:  out_pi = 53587b990100000097190000002085b500000000000000000000100000000000008029acbdcc000000000000000000004861ed650600000000000000000000000000000000004000990100000053587b0000000000000000004861ed65060000004000000000000000000000000080000000003085b597190000000000000000a4b0f632030000000000000000000000000000010000000000a6b0f63203000000000000000000002f33000000400a6b000000000000000000000008000000000000600a6b2f3300 
+# KERNEL:  out_chi = 53587b990100000097191000002085b5008029acbdcc00005358421100000000848129acbdec85b500000000000000004861ed6506004000990100000053187b0000000000004000d160ed650653587b0000000000000000004861ed650680000040003085b517190000000000008000004861dde0b397190000000000000000a4b0f6330300000000a6b0f6320300000000000100000000a41646c43103000000000000000000002f33000800400a6b000060026b2f330000000008000000002f33600a6b6f396b
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k17 -work SHA3_FPGA $dsn/src/THETA.v $dsn/src/SHA3_tb.v $dsn/src/THETA_column.v $dsn/src/RHO.v $dsn/src/PI.v $dsn/src/CHI_row.v $dsn/src/CHI.v
+# Unit top modules: SHA3_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+SHA3_TB SHA3_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.4 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 0 primitives and 1612 (100.00%) other processes in SLP
+# SLP: 4832 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1048 kB (elbread=467 elab2=445 kernel=135 sdf=0)
+# KERNEL: ASDB file was created in location D:\My_Designs\SHA3\SHA3_FPGA\src\wave.asdb
+#  15:01, œroda, 8 maja 2024
+#  Simulation has been initialized
+run
+# KERNEL: TIME = 0 
+# KERNEL:  in = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_theta = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, 
+# KERNEL:  out_rho = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_pi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# KERNEL:  out_chi = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# KERNEL: TIME = 5 
+# KERNEL:  in = 53587b9901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+# KERNEL:  out_theta = 53587b990100000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000800000000000000080a6b0f63203000000000000000000000052587b990100000000000000000000000000000000000080a6b0f63203000000, 
+# KERNEL:  out_rho = 53587b9901000000a4b0f63203000000000000000000000000000008000000000000003085b59719000000000000000097190000002085b5000000000000000000000000000040000000600a6b2f33000000000000000000004861ed6506000000000000000000000000000100000000990100000053587b00000000000000002f33000000400a6b0040000000000000000010000000000000a6b0f63203000000000000000000004861ed650600000000000000000000000000000000008000008029acbdcc0000 
+# KERNEL:  out_pi = 53587b990100000097190000002085b500000000000000000000100000000000008029acbdcc000000000008000000000000600a6b2f330000000000000000002f33000000400a6b0000000000000000a4b0f632030000000000000000000000000000010000000000a6b0f63203000000000000000000000000003085b597190000000000000000004861ed650600000040000000000000000000000000800000000000000000000000000000004000990100000053587b00000000000000004861ed6506000000 
+# KERNEL:  out_chi = 53587b990100000097191000002085b5008029acbdcc00005358421100000000848129acbdec85b500000008000000002f33600a6b6f396b00000000000000002f33000800400a6b000060026b2f3300a4b0f6330300000000a6b0f6320300000000000100000000a41646c4310300000000000000000000004861dde0b397190000000000000000004861ed650680000040003085b517190000000000008000990100000053187b0000000000004000d160ed650653587b00000000000000004861ed6506004000
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.

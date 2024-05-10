@@ -1,0 +1,40 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=SHA3_FPGA
+[Library]
+SHA3_FPGA=.\SHA3_FPGA\SHA3_FPGA.lib
+[$LibMap$]
+SHA3_FPGA=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/THETA.v=-1
+/SHA3_tb.v=-1
+/THETA_column.v=-1
+/RHO.v=-1
+/PI.v=-1
+/CHI_row.v=-1
+/CHI_row.v=-1
+/CHI.v=-1
+[Files.Data]
+.\src\THETA.v=Verilog Source Code
+.\src\SHA3_tb.v=Verilog Source Code
+.\src\THETA_column.v=Verilog Source Code
+.\src\RHO.v=Verilog Source Code
+.\src\PI.v=Verilog Source Code
+.\src\CHI_row.v=Verilog Source Code
+.\src\CHI_row.v=Verilog Source Code
+.\src\CHI.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

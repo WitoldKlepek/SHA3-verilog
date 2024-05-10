@@ -1,0 +1,29 @@
+Active-HDL 15.0.261.9132 2024-05-08 15:01:07
+
+Elaboration top modules:
+Verilog Module                SHA3_TB
+
+
+---------------------------------------------------------------------------------------------
+Verilog Module          | Library   | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------
+SHA3_TB                 | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+THETA                   | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+RHO                     | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+PI                      | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+CHI                     | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+THETA_column            | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+CHI_row                 | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+Library                 | Comment
+---------------------------------------------------------------------------------------------
+sha3_fpga               | None
+---------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+SHA3_TB SHA3_TB
+
+
+The performance of simulation is reduced. Version Student Edition
