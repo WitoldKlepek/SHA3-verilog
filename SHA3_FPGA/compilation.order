@@ -5,3 +5,7 @@
 .\src\PI.v
 .\src\CHI_row.v
 .\src\CHI.v
+.\src\PERMUTATION_MODULE.v
+.\src\IOTA.v
+.\src\ROUND_CONSTANT_COUNTER.v
+.\src\RND.v

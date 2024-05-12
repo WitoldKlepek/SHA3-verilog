@@ -23,8 +23,11 @@ FAMILY=
 /RHO.v=-1
 /PI.v=-1
 /CHI_row.v=-1
-/CHI_row.v=-1
 /CHI.v=-1
+/PERMUTATION_MODULE.v=-1
+/IOTA.v=-1
+/ROUND_CONSTANT_COUNTER.v=-1
+/RND.v=-1
 [Files.Data]
 .\src\THETA.v=Verilog Source Code
 .\src\SHA3_tb.v=Verilog Source Code
@@ -32,8 +35,11 @@ FAMILY=
 .\src\RHO.v=Verilog Source Code
 .\src\PI.v=Verilog Source Code
 .\src\CHI_row.v=Verilog Source Code
-.\src\CHI_row.v=Verilog Source Code
 .\src\CHI.v=Verilog Source Code
+.\src\PERMUTATION_MODULE.v=Verilog Source Code
+.\src\IOTA.v=Verilog Source Code
+.\src\ROUND_CONSTANT_COUNTER.v=Verilog Source Code
+.\src\RND.v=Verilog Source Code
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel

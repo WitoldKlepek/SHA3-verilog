@@ -2,8 +2,10 @@
 C:/Aldec/Active-HDL-Student-Edition/vlib/std/src/standard.vhd=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/CHI_row.v=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/THETA_column.v=S
+D:/My_Designs/SHA3/SHA3_FPGA/src/IOTA.v=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/CHI.v=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/PI.v=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/RHO.v=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/THETA.v=S
+D:/My_Designs/SHA3/SHA3_FPGA/src/RND.v=S
 D:/My_Designs/SHA3/SHA3_FPGA/src/SHA3_tb.v=S

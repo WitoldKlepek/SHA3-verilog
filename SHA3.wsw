@@ -14,9 +14,9 @@ tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\SHA3_FPGA\src/PI.v|]
 TemplateId=2
 tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\SHA3_FPGA\src\CHI_row.v|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\SHA3_FPGA\src/CHI_row.v|]
 TemplateId=2
 tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\SHA3_FPGA\src\CHI.v|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\SHA3_FPGA\src/CHI.v|]
 TemplateId=2
 tab=lu
