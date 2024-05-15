@@ -29,7 +29,7 @@ begin
 	   first_round_reg 	<=	1'b0;
 	end else 
 		if(CLK) begin
-			first_round_reg		<=	twenty_four_counter == 0 ? 1'b0 : 1'b0;
+			first_round_reg		<=	twenty_four_counter == 0 ? 1'b1 : 1'b0;
 			case(twenty_four_counter)
 				5'b00000 : out_reg	<=	`Z_WIDTH'h0000000000000001;	
 				5'b00001 : out_reg	<=	`Z_WIDTH'h0000000000008082;

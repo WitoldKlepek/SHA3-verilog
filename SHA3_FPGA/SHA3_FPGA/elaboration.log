@@ -1,4 +1,4 @@
-Active-HDL 15.0.261.9132 2024-05-12 22:54:47
+Active-HDL 15.0.261.9132 2024-05-15 23:26:36
 
 Elaboration top modules:
 Verilog Module                SHA3_TB
@@ -8,7 +8,9 @@ Verilog Module                SHA3_TB
 Verilog Module          | Library   | Info | Compiler Version          | Compilation Options
 ---------------------------------------------------------------------------------------------
 SHA3_TB                 | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+PERMUTATION_MODULE      | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 RND                     | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+ROUND_CONSTANT_COUNTER  | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 THETA                   | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 RHO                     | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 PI                      | sha3_fpga |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17

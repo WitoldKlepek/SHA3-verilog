@@ -13,12 +13,12 @@ module PERMUTATION_MODULE #(
 	);
 
 	
-wire [0:`STATE_SIZE-1] rnd_in, rnd_out;
-reg [0:`STATE_SIZE-1] s_reg;
+wire [0:`STATE_SIZE-1]  rnd_out;
+reg [0:`STATE_SIZE-1] rnd_in, s_reg;
 wire first_rnd;
 wire [0:`Z_WIDTH-1] round_constant;
 
-assign rnd_in = first_rnd ? {IN ^ s_reg[0:R_BLOCK_SIZE-1] ,s_reg[R_BLOCK_SIZE:`STATE_SIZE]} : s_reg; 
+assign rnd_in = first_rnd ? {IN ^ s_reg[0:R_BLOCK_SIZE-1] ,s_reg[R_BLOCK_SIZE:`STATE_SIZE-1]} : s_reg; 
 
 RND RND1(
 	.IN(rnd_in),
@@ -32,7 +32,6 @@ ROUND_CONSTANT_COUNTER RND_CNT (
 	.OUT(round_constant),
 	.FIRST_ROUND(first_rnd)
 	);
-
 	
 	
 always@(posedge CLK, posedge A_RST)
